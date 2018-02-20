@@ -18,13 +18,13 @@ public class Main {
                 System.out.println(scrambled.get(i));
             }
             long scrtime = System.currentTimeMillis();
-            System.out.println("Scrambled!... Sorting... " + (scrtime-starttime));
+            System.out.println("Scrambled!... Sorting... Time taken in ms: " + (scrtime-starttime));
             Collections.sort(scrambled);
             for(int i = 0; i<100;i++){
                 System.out.println(scrambled.get(i));
             }
             long sorttime = System.currentTimeMillis();
-            System.out.println("Finished sorting!... closing..." + (sorttime-scrtime));
+            System.out.println("Finished sorting!... closing... Time taken in ms: " + (sorttime-scrtime));
 
         }catch (Exception e){
             System.out.println("Err: Doesn't exist or something went wrong");
